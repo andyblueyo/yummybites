@@ -27,7 +27,7 @@ export default class extends React.Component {
                         </li>
                         <li>
                             <Link to="/gallery" activeClassName="active">
-                                gallery
+                                Gallery
                             </Link>
                         </li>
                         <li>

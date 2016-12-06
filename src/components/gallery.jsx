@@ -8,8 +8,6 @@ export default class extends React.Component {
     render() {
         return (
             <div className="container">
-                <h1>Gallery View</h1>
-                <p>Contents of your Gallery</p>
             </div>
         );
     }

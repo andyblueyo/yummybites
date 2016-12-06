@@ -5,15 +5,22 @@ body {
 	padding: 10px;
 }
 
+
+
 .row {
 	display: flex;
 }
 
 video {
 	display: block;
+	border: solid 1px blue;
+	height: 100%;
+	width: 100%;
 }
 
 canvas {
+	border: solid 1px blue;
+	width: 100%;
 	cursor: pointer;
 	display: block;
 }
