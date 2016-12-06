@@ -6,11 +6,23 @@
     <title>courseplnnr</title>
     <link rel="icon" href="page-icon.png">
 
+        <!--Leaflet.js stylesheet from the CDN-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <script defer src="dist/bundle.js"></script>
 </head>
 <body>
-    <div id="app"></div> 
+
+    <div id="app"></div>
+    <div id="map">
+    
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.0/fetch.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="./src/components/map.js"></script>
 </body>
 </html>

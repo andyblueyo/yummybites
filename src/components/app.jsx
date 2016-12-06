@@ -13,6 +13,7 @@ export default class extends React.Component {
 
         return (
             <div>
+            
                 <nav>
                     <ul>
                         <li>
@@ -38,6 +39,8 @@ export default class extends React.Component {
                     </ul>
                 </nav>
                 <main>
+                    <img src="../../src/img/placeholder.jpg" alt="picture"/>
+                    <hr/>
                     {this.props.children}
                 </main>
             </div>
