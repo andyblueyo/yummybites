@@ -1,10 +1,13 @@
 "use strict";
 
 var video = document.querySelector("video");
-var canvas = document.querySelector("canvas");
+var canvas = document.getElementById("cnvs1");
 var ctx = canvas.getContext("2d");
+var canvas2 = document.getElementById("layer1");
+var ctx2 = canvas2.getContext("2d");
 var filterSel = document.querySelector("#filter-select");
-var mouseIsDown = false;
+
+
 
 function evtToCanvas(evt) {
     return {
@@ -18,42 +21,22 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         .then(function(stream) {
             video.src = window.URL.createObjectURL(stream);
 
-            video.addEventListener("click", function() {
+            document.getElementById("snap").addEventListener("click", function() {
                 canvas.width = video.clientWidth;
                 canvas.height = video.clientHeight;
-                ctx.drawImage(video, 0, 0);
+                ctx.drawImage(video, 0, 0, video.clientWidth, video.clientHeight);
+
+                
+
+            
+
             });
 
             filterSel.addEventListener("change", function() {
                 var filterName = filterSel.options.item(filterSel.selectedIndex).value;
-                console.log(filterName);
                 canvas.className = filterName;
             });
-
-            // canvas.addEventListener("click", function() {
-            //     console.log(canvas.toDataURL());
-            // });
-
-            canvas.addEventListener("mousedown", function(evt) {
-                mouseIsDown = true;
-                ctx.beginPath();
-                ctx.strokeStyle = "#FF0";
-                var coords = evtToCanvas(evt);
-                ctx.moveTo(coords.x, coords.y);
-            });
-
-            canvas.addEventListener("mousemove", function(evt) {
-                if (mouseIsDown) {
-                    var coords = evtToCanvas(evt);
-                    ctx.lineTo(coords.x, coords.y);
-                    ctx.stroke();
-                }
-            });
-
-            canvas.addEventListener("mouseup", function(evt) {
-                mouseIsDown = false;
-            });
-
+            document.getElementById("")
 
         })
         .catch(function(err) {
@@ -64,3 +47,21 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 } else {
     alert("Sorry, your browser doesn't allow turning on the web cam, use Chrome or Firefox");
 }
+
+// to download an canvas as a png 
+// http://weworkweplay.com/play/saving-html5-canvas-as-image/
+
+// mirror.addEventListener('contextmenu', function (e) {
+//     var dataURL = canvas.toDataURL('image/png');
+//     mirror.src = dataURL;
+// });
+// var button = document.getElementById('btn-download');
+// button.addEventListener('click', function (e) {
+//     var dataURL = canvas.toDataURL('image/png');
+//     button.href = dataURL;
+// });
+
+
+
+
+
