@@ -9,11 +9,11 @@
 	<!--<link rel="icon" href="img/page-icon.png">-->
 </head>
 <body>
-
+	<img id= "imgCanvas" src="page-icon.png" alt="">
 	<div>
 		<div class="jumbotron jumbotron-fluid">
 			<div class="container" id="header">
-				<h1>Media!</h1>
+				<h1>Imagine Yourself at Yummy Bites!</h1>
 				<video id="video" autoplay="true"></video>
 				<div class ="buttons-cam">
 					<button id="snap"><span class="glyphicon glyphicon-camera" aria-hidden="true"></button>
@@ -23,7 +23,6 @@
 		<div class ="buttons-cam">
 			<select id="filter-select">
 				<option value="" selected>No Filter</option>
-				<option value="teriyaki">teriyaki</option>
 				<option value="sepia">Sepia</option>
 				<option value="grayscale">Grayscale</option>
 				<option value="invert">Invert</option>
@@ -31,13 +30,18 @@
 				<option value="hue-rotate">Hue Rotate</option>
 				<option value="blur">Blur</option>
 			</select>
-			<!--<div ><canvas></canvas></div>-->
+			<div style="container"> 
+				<div style="position: relative;">
+ 					<canvas id="bg" width="640" height="480" style="position: absolute; z-index: 0"></canvas>
+					<canvas id="fg" width="640" height="480" style="position: absolute; z-index: 1"></canvas>
+				</div>
+			</div>
 
 		</div>
 	</div>
 	<!--to download an canvas as a png 
 	http://weworkweplay.com/play/saving-html5-canvas-as-image/-->
-	<a href="#" class="button" id="btn-download" download="yummybites.png">Download</a>
+	<!--<a href="#" class="button" id="btn-download" download="yummybites.png">Download</a>
 
 	<div class="container">
         <div class="row">
@@ -54,7 +58,7 @@
    style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
 </div></div>
         </div>
-    </div>
+    </div>-->
 
 
 	

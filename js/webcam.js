@@ -1,11 +1,12 @@
 "use strict";
 
 var video = document.querySelector("video");
-var canvas = document.getElementById("cnvs1");
+var canvas = document.getElementById("bg");
 var ctx = canvas.getContext("2d");
-var canvas2 = document.getElementById("layer1");
+var canvas2 = document.getElementById("fg");
 var ctx2 = canvas2.getContext("2d");
 var filterSel = document.querySelector("#filter-select");
+var image = document.getElementById("imgCanvas");
 
 
 
@@ -25,18 +26,16 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                 canvas.width = video.clientWidth;
                 canvas.height = video.clientHeight;
                 ctx.drawImage(video, 0, 0, video.clientWidth, video.clientHeight);
-
-                
-
-            
+                ctx2.drawImage(image, 0, 0, video.clientWidth, video.clientHeight);
 
             });
-
+            
             filterSel.addEventListener("change", function() {
                 var filterName = filterSel.options.item(filterSel.selectedIndex).value;
                 canvas.className = filterName;
             });
             document.getElementById("")
+    
 
         })
         .catch(function(err) {
@@ -47,6 +46,8 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 } else {
     alert("Sorry, your browser doesn't allow turning on the web cam, use Chrome or Firefox");
 }
+
+// ctx2.clearRect(0, 0, canvas.width, canvas.height);
 
 // to download an canvas as a png 
 // http://weworkweplay.com/play/saving-html5-canvas-as-image/

@@ -5,6 +5,10 @@ body {
 	padding: 10px;
 }
 
+img {
+	height: 30px;
+	width: 30px;
+}
 .jumbotron {
 	text-align: center;
     margin-bottom: 0px;
@@ -17,9 +21,9 @@ body {
 }
 .container {
     font-family: "Hevletica Neue", Helvetica, Arial, sans-serif;
-    max-width: 1170px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 100px 15px;
 }
 
 #snap {
@@ -56,9 +60,7 @@ canvas {
 	
 }
 
-.teriyaki {
-	filter: url(../img/chickenTeriyaki.jpg);
-}
+
 .grayscale {
 	filter: grayscale(100%);	
 }
