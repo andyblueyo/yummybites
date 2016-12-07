@@ -42,9 +42,114 @@ nav a {
 }
 
 nav a:hover {
-    border-bottom-color: #4CAF50;
+    border-bottom-color: #333;
 }
 
 nav a.active {
-    border-bottom-color: #2E7D32;
+    border-bottom-color: #333;
 }
+
+.container {
+    margin: 0 auto;
+}
+
+span {
+    font-weight: bold;
+}
+
+.card-title {
+    flex: 1 1 auto;
+    width: auto;
+    padding: 0px;
+}
+
+
+
+@media (max-width: 435px ) {
+    .item-title {
+        padding-left: 50px;
+    }
+    img {
+        display: none;
+    }
+}
+@media (min-width: 435px) {
+    img {
+        width: 175px;
+    }
+    .card-title {
+        margin-left: 175px;
+    }
+
+    .card-text {
+        margin-left: 175px;
+    }
+}
+
+@media (min-width: 768px) {
+   img {
+       width: 200px; 
+   }
+   .card-title {
+       margin-left: 210px;
+   }
+   .card-text {
+       margin-left: 200px;
+   }
+}
+
+#map {
+height: 400px;
+width: 100%;
+max-width: 900px;
+margin: 0 auto 0 auto;
+}
+
+#map p, #map h2 {
+    text-align: center;
+}
+
+.about{
+    text-align: center;
+}
+
+.about{
+    margin-right: 4em;
+    margin-left: 4em;
+}
+
+.row{
+    margin-right:3em;
+    margin-left:3em;
+}
+
+footer{
+    margin-top:2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: lightslategrey;
+    border-color: white;
+}
+
+footer .col-md-4{
+    text-align: center;
+}
+
+footer .contacts{
+    display: inline-block;
+    text-align: left;
+}
+
+footer .contacts a{
+    color: black;
+}
+
+footer .contacts a:link{
+    text-decoration: none;
+}
+
+footer .contacts a:hover{
+    color: darkgrey;
+}
+
+
