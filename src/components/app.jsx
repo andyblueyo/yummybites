@@ -32,7 +32,7 @@ export default class extends React.Component {
                         </li>
                         <li>
                             <Link to="/cart" activeClassName="active">
-                                cart
+                                Cart
                             </Link>
                         </li>
                     </ul>

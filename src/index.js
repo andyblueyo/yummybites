@@ -6,11 +6,14 @@ import Menu from "./components/menu.jsx";
 import Gallery from "./components/gallery.jsx";
 import Cart from "./components/cart.jsx";
 
+// Stylesheet: Material Design Lite
+import 'react-mdl/extra/material.css';
+import 'react-mdl/extra/material.js';
+
 import {Router, Route, IndexRoute, hashHistory} from "react-router";
 
 //import our stylesheet so webpack puts it into the bundle
 import "./css/main.css";
-
 //TODO: replace the JSX here with a Router configuration
 //from the react router module (already a dependency in package.json)
 
@@ -24,10 +27,5 @@ var router = (
         </Route>
     </Router>
 );
-
-
-
-
-
 
 render(router, document.getElementById("app"));

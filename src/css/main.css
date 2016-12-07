@@ -42,9 +42,13 @@ nav a {
 }
 
 nav a:hover {
-    border-bottom-color: #4CAF50;
+    border-bottom-color: #333;
 }
 
 nav a.active {
-    border-bottom-color: #2E7D32;
+    border-bottom-color: #333;
+}
+
+.container {
+    margin: 0 auto;
 }
