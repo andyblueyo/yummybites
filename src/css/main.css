@@ -52,3 +52,46 @@ nav a.active {
 .container {
     margin: 0 auto;
 }
+
+span {
+    font-weight: bold;
+}
+
+.card-title {
+    flex: 1 1 auto;
+    width: auto;
+    padding: 0px;
+}
+
+@media (max-width: 435px ) {
+    .item-title {
+        padding-left: 50px;
+    }
+    img {
+        display: none;
+    }
+}
+@media (min-width: 435px) {
+    img {
+        width: 175px;
+    }
+    .card-title {
+        margin-left: 175px;
+    }
+
+    .card-text {
+        margin-left: 175px;
+    }
+}
+
+@media (min-width: 768px) {
+   img {
+       width: 200px; 
+   }
+   .card-title {
+       margin-left: 210px;
+   }
+   .card-text {
+       margin-left: 200px;
+   }
+}
