@@ -1,6 +1,5 @@
 import React from "react";
 import {Button, Card, CardText, Cell, Grid, CardTitle} from 'react-mdl';
-console.log(TERIYAKI);
 export default class extends React.Component {
     constructor(props) {
         super(props);

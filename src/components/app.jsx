@@ -13,30 +13,33 @@ export default class extends React.Component {
 
         return (
             <div>
-                <nav>
-                    <ul>
-                        <li>
-                            <IndexLink to="/" activeClassName="active">
-                                Home
-                            </IndexLink>
-                        </li>
-                        <li>
-                            <Link to="/menu" activeClassName="active">
-                                Menu
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/gallery" activeClassName="active">
-                                gallery
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/cart" activeClassName="active">
-                                Cart
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
+                <header>
+                    <nav className = "navbar navbar-inverse">
+                        <ul className = "nav navbar-nav navbar-right">
+                            <li>
+                                <a href="./index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./about.html">
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <IndexLink to="/menu" activeClassName="active">
+                                    Menu
+                                </IndexLink>
+                            </li>
+                            <li>
+                                <a href="./index.html" >
+                                    Webcam
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                
                 <main>
                     {this.props.children}
                 </main>

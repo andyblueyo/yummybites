@@ -20,7 +20,7 @@ import "./css/main.css";
 var router = (
     <Router history = {hashHistory}>
         <Route path="/" component = {App}>
-            <IndexRoute component = {Home}></IndexRoute>
+            <IndexRoute component = {Menu}></IndexRoute>
             <Route path = "/menu" component = {Menu}></Route>
             <Route path = "/gallery" component = {Gallery}></Route>
             <Route path = "/cart" component = {Cart}></Route>
