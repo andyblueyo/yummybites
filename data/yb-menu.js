@@ -104,7 +104,7 @@ var KOREAN = [
         "name": "Hot Pot Bi-Bim Bop",
         "price": 8.99,
         "description": "Hot Stone Pot, Meat(Beef/Shrimp/Chicken), Many Veggies, Egg & Rice. Served w/Rice & Korean Side Dish.",
-        "imgURL": "http://www.maangchi.com/wp-content/uploads/2009/01/tteokguk_bowl.jpg"
+        "imgURL": "https://s3.amazonaws.com/Menu_Pic/7ead60bc-0eb9-441d-889a-6b642cde47bb_bibimbap_bul_go_gi.jpg"
     },
     {
         "id": 16,

@@ -17,10 +17,10 @@ export default class extends React.Component {
                         <div className="itemIMG">
                             <img className="item-pic" src={item.imgURL} style={{left: "0", position: "absolute", height: "100%"}}/>
                         </div>
-                        <CardTitle className="card-title" style={{padding: "0px"}}>
+                        <CardTitle className="cardTitle" style={{padding: "0px"}}>
                             <h4 className="item-title">{item.name}</h4>
                         </CardTitle>
-                        <CardText style={{flex: "auto", width: "auto"}}className="card-text">
+                        <CardText style={{flex: "auto", width: "auto"}}className="cardText">
                             <p>{item.description}<br/><span>Price: ${item.price}</span></p>
          
                         </CardText>
@@ -33,10 +33,10 @@ export default class extends React.Component {
                         <div className="itemIMG">
                             <img src={item.imgURL} style={{left: "0", position: "absolute", height: "100%"}}/>
                         </div>
-                        <CardTitle style={{padding: "0px"}}className="card-title">
+                        <CardTitle style={{padding: "0px"}}className="cardTitle">
                             <h4 className="item-title">{item.name}</h4>    
                         </CardTitle>
-                        <CardText className="card-text" style={{flex: "auto", width: "auto"}}>
+                        <CardText className="cardText" style={{flex: "auto", width: "auto"}}>
                             <p>{item.description}<br/><span>Price: ${item.price}</span></p>
                         </CardText>
                     </Card> 
@@ -49,10 +49,10 @@ export default class extends React.Component {
                         <div className="itemIMG">
                             <img src={item.imgURL} style={{left: "0", position: "absolute", height: "100%"}}/>
                         </div>
-                        <CardTitle style={{padding: "0px"}}className="card-title">
+                        <CardTitle style={{padding: "0px"}}className="cardTitle">
                             <h4 className="item-title">{item.name}</h4>
                         </CardTitle>
-                        <CardText className="card-text" style={{flex: "auto", width: "auto"}}className="card-text">
+                        <CardText className="cardText" style={{flex: "auto", width: "auto"}}className="cardText">
                             <p>{item.description}<br/><span>Price: ${item.price}</span></p>
                         </CardText>
                     </Card> 
