@@ -5,64 +5,51 @@
 	<meta charset="UTF-8">
 	<title>Media</title>
 	<link rel="stylesheet" href="src/css/webcam.css">
-	<link rel="stylesheet" href="src/css/main.css">
+	 <link rel="stylesheet" href="./src/css/main.css">
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!--<link rel="icon" href="img/page-icon.png">-->
 </head>
 <body>
 	<img id= "imgCanvas" src="page-icon.png" alt="">
-	<div>
-		<div class="jumbotron jumbotron-fluid">
-			<div class="container" id="header">
-				<h1>Imagine Yourself at Yummy Bites!</h1>
-				<video id="video" autoplay="true"></video>
-				<div class ="buttons-cam">
-					<button id="snap"><span class="glyphicon glyphicon-camera" aria-hidden="true"></button>
-				</div>
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container" id="header">
+			<h1>Imagine Yourself at Yummy Bites!</h1>
+			<video id="video" autoplay="true"></video>
+			<div class ="buttons-cam">
+				<button id="snap" class="button"><span class="glyphicon glyphicon-camera" aria-hidden="true"></button>
+				<a href="#" class="button" id="btn-download" disabled = "true" download="yummybites.png"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></a>
 			</div>
-		</div>
-		<div class ="buttons-cam">
-			<select id="filter-select">
-				<option value="" selected>No Filter</option>
-				<option value="sepia">Sepia</option>
-				<option value="grayscale">Grayscale</option>
-				<option value="invert">Invert</option>
-				<option value="saturate">Saturate</option>
-				<option value="hue-rotate">Hue Rotate</option>
-				<option value="blur">Blur</option>
-			</select>
-			<div style="container"> 
-				<div style="position: relative;">
- 					<canvas id="bg" width="640" height="480" style="position: absolute; z-index: 0"></canvas>
-					<canvas id="fg" width="640" height="480" style="position: absolute; z-index: 1"></canvas>
-				</div>
-			</div>
-
 		</div>
 	</div>
-	<!--to download an canvas as a png 
-	http://weworkweplay.com/play/saving-html5-canvas-as-image/-->
-	<!--<a href="#" class="button" id="btn-download" download="yummybites.png">Download</a>
-
 	<div class="container">
+		<div class ="buttons-cam">
+		<select id="filter-select">
+			<option value="" selected>No Filter</option>
+			<option value="sepia">Sepia</option>
+			<option value="grayscale">Grayscale</option>
+			<option value="invert">Invert</option>
+			<option value="saturate">Saturate</option>
+			<option value="hue-rotate">Hue Rotate</option>
+			<option value="blur">Blur</option>
+		</select>
+	</div>
         <div class="row">
-            <div class="col-md-4">
-				<div class="canvas__container">
-  					<canvas id="cnvs1" class="canvas__canvas"></canvas>
-  					<img src="" id="mirror" class="canvas__mirror" />
+				<div style="position: relative;">
+					<!--to download an canvas as a png 
+					http://weworkweplay.com/play/saving-html5-canvas-as-image/-->
+
+					<div class="row">
+  						<div class="col-md-6">					
+							  <div class="canvas__container">
+  								<canvas id="cnvs1" class="canvas__canvas" width="640" height="480" style="position: absolute; z-index: 0"></canvas>
+  								<img src="" id="mirror" class="canvas__mirror" /></div>
+								<canvas id="bg" width="640" height="480" style="position: absolute; z-index: 0" ></canvas></div>
+  						<div class="col-md-6">col-md-6</div>
+					</div>
 				</div>
-			</div>
-            <div class="col-md-4"><div style="position: relative;">
- <canvas id="layer1" width="100" height="100" 
-   style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
- <canvas id="layer2" width="100" height="100" 
-   style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
-</div></div>
         </div>
-    </div>-->
-
-
-	
+    </div>
 	<script src="js/webcam.js"></script>
 </body>
 </html> 
