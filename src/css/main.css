@@ -2,7 +2,7 @@
 
 body {
     font-family: "Hevletica Neue", Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     padding: 0;
     margin: 0;
 }
@@ -60,6 +60,25 @@ main{
     padding: 0px;
 }
 
+.dishes h2{
+    font-family: Boogaloo;
+}
+
+.card {
+    font-family: Boogaloo;
+}
+.card p {
+    font-size: 18px;
+}
+.item-title {
+    font-family: Boogaloo;
+    font-size: 28px;
+}
+
+.cardText {
+    text-align: left;
+}
+
 /*Navbar*/
 .col-xs-4{
     text-align: center;
@@ -94,17 +113,26 @@ a {
     color: black;
 }
 
-
-
-
-
+#logoDiv {
+    padding: 0px;
+}
 
 @media (max-width: 435px ) {
     .item-title {
-        padding-left: 50px;
+        margin: 0 auto;
     }
-    img {
+    .itemIMG {
         display: none;
+    }
+    #logo {
+        width: 135px;
+        display: block;
+    }
+    li a {
+       font-size: 20px;
+    }
+    .navbar{
+        padding-bottom: 0px;
     }
 }
 @media (min-width: 435px) {
@@ -125,18 +153,19 @@ a {
        width: 200px; 
    }
    .cardTitle {
-       margin-left: 210px;
+       margin-left: 220px;
    }
    .cardText {
        margin-left: 200px;
    }
 }
 
+
 #map {
-height: 400px;
-width: 100%;
-max-width: 900px;
-margin: 0 auto 0 auto;
+    height: 400px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 0 auto;
 }
 
 #map p, #map h2 {
@@ -145,9 +174,10 @@ margin: 0 auto 0 auto;
 
 .about{
     text-align: center;
-    margin-right: 4em;
-    margin-left: 4em;
+
 }
+
+
 
 .row{
     margin-right:3em;
@@ -202,13 +232,15 @@ footer .contacts a:hover{
 
 /*about*/
 .about p{
-    margin-right: 6em;
-    margin-left: 6em;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
 }
 
 .about{
     margin-bottom: 2em;
     font-family: 'Droid Sans';
+
 }
 
 /**/
