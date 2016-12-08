@@ -82,7 +82,7 @@ var KOREAN = [
         "id": 12,
         "name": "Dumpling Soup",
         "price": 8.49,
-        "description": "Dumpling * Beef Soup. Served w/Korean Dish without Rice.",
+        "description": "Dumpling & Beef Soup. Served w/Korean Dish without Rice.",
         "imgURL": "http://2.bp.blogspot.com/-Ig0rpV0rtMo/T0TkiWbujuI/AAAAAAAADxA/X4PLX_-a3Yg/s1600/Crispy+Fried+Tofu+in+Spicy+Teriyaki+Sauce+Close.jpg"
     },
     {

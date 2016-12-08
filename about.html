@@ -6,7 +6,7 @@
     <title>Yummy Bites</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.amber-orange.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link rel="stylesheet" href="./src/css/main.css">
 
@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
 
 </head>
-<body>
+<body id="indexBody">
     <header>
         <div class="container">
             <!-- top navigation bar -->
@@ -37,8 +37,8 @@
                         </div>
 
                         <!-- Cetner Logo -->
-                        <div class="col-xs-4">
-                            <img src="./src/img/logo.jpeg" alt="">
+                        <div id="logoDiv" class="col-xs-4">
+                            <img id="logo" src="./src/img/logo.png" alt="">
                         </div>
 
                         <!-- right menu-->
@@ -59,12 +59,13 @@
                     </div>
             </div>
         </div>
+
     </header>
     <main>
         <div class="container">
             <div class="about">
                 <h1>About us</h1>
-                <p>
+                <p id="aboutPar">
                     Owned and operated by a local South Korean family from Lynnwood, Yummy Bites offers a flavor packed menu ranging from Japanese fusion Teriyaki to traditional and trending Korean entrees. Located in the heart of University District, this warm and cozy restaurant will surely make you feel right at home the moment you walk in and have you leaving with a satisfied belly every time. 
                 </p>
             </div>  
@@ -76,12 +77,12 @@
 
     </main>
 
-    <footer>
+      <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <h3>Location</h3>
-                    <p>-university District-</p>
+                    <p>&lt;university District&gt;</p>
                     <p><a href="https://goo.gl/maps/9jjDFCDKYy72" target="_blank">4131 University Way NE, Seattle, WA 98105</a></p>
                 </div>
                 <div class="col-md-4">
@@ -95,7 +96,7 @@
                         <p><span class="fa fa-phone"></span><a href = "tel:12066336582"> 206 - 633 - 6582</a></p>
                         <div class = "icons">
                             <a href="./index.html" target="_blank"><span title = "Go To Homepage" class="fa fa-home fa-2x"></span></a>
-                            <a href="https://www.facebook.com/pages/Yummy-Bites/138298266216148?fref=ts" target="_blank"><span title = "Go To Facebook" class="fa fa fa-facebook-official fa-2x"></span></a>
+                            <a href="https://www.facebook.com/pages/Yummy-Bites/138298266216148?fref=ts" target="_blank"><span title = "Go To Facebook" class="fa fa-facebook-official fa-2x"></span></a>
                             <a href="https://www.yelp.com/biz/yummy-bites-seattle" target="_blank"><span title = "Go To Yelp" class="fa fa-yelp fa-2x"></span></a>
                         </p>
                     </div>
