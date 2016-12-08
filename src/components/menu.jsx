@@ -21,7 +21,7 @@ export default class extends React.Component {
                             <h4 className="item-title">{item.name}</h4>
                         </CardTitle>
                         <CardText style={{flex: "auto", width: "auto"}}className="cardText">
-                            <p>{item.description}<br/><span>Price: ${item.price}</span></p>
+                            <p>{item.description}<br/><span style={{fontWeight: "bold"}}>Price: ${item.price}</span></p>
          
                         </CardText>
                     </Card> 
@@ -37,7 +37,7 @@ export default class extends React.Component {
                             <h4 className="item-title">{item.name}</h4>    
                         </CardTitle>
                         <CardText className="cardText" style={{flex: "auto", width: "auto"}}>
-                            <p>{item.description}<br/><span>Price: ${item.price}</span></p>
+                            <p>{item.description}<br/><span style={{fontWeight: "bold"}}>Price: ${item.price}</span></p>
                         </CardText>
                     </Card> 
                 </Cell>
@@ -49,11 +49,11 @@ export default class extends React.Component {
                         <div className="itemIMG">
                             <img src={item.imgURL} style={{left: "0", position: "absolute", height: "100%"}}/>
                         </div>
-                        <CardTitle style={{padding: "0px"}}className="cardTitle">
+                        <CardTitle id="itemTitle" style={{padding: "0px"}}className="cardTitle">
                             <h4 className="item-title">{item.name}</h4>
                         </CardTitle>
                         <CardText className="cardText" style={{flex: "auto", width: "auto"}}className="cardText">
-                            <p>{item.description}<br/><span>Price: ${item.price}</span></p>
+                            <p>{item.description}<br/><span style={{fontWeight: "bold"}}>Price: ${item.price}</span></p>
                         </CardText>
                     </Card> 
                 </Cell>
@@ -61,18 +61,20 @@ export default class extends React.Component {
         }
         return (
             <div className="container">
-                <h2 style={{textAlign: "center"}}>Teriyaki</h2>
-                    <Grid className="grid">
-                        {teriyakiItems}
-                    </Grid>
-                <h2 style={{textAlign: "center"}}>Korean Food</h2>
-                    <Grid>
-                        {koreanItems}
-                    </Grid>
-                <h2 style={{textAlign: "center"}}>Chinese & Wok</h2>
-                    <Grid>
-                        {chineseItems}
-                    </Grid>
+                <div className="dishes">
+                    <h2 style={{textAlign: "center"}}>Teriyaki</h2>
+                        <Grid className="grid">
+                            {teriyakiItems}
+                        </Grid>
+                    <h2 style={{textAlign: "center"}}>Korean Food</h2>
+                        <Grid>
+                            {koreanItems}
+                        </Grid>
+                    <h2 style={{textAlign: "center"}}>Chinese & Wok</h2>
+                        <Grid>
+                            {chineseItems}
+                        </Grid>
+                </div>
             </div>
         );
     }

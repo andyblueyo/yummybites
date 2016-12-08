@@ -19,31 +19,31 @@ export default class extends React.Component {
                         <div className="col-xs-4">
                             <ul className = "nav navbar-nav pull-right">
                                 <li>
-                                    <a href="./index.html" >
+                                    <a id="menuNav" href="./index.html" >
                                         Home
                                     </a>
                                 </li>
                                 <li className = "active">
-                                    <a href="./about.html" >
+                                    <a id="menuNav" href="./about.html" >
                                         About
                                     </a>
                                 </li>
                             </ul>
                         </div>
 
-                        <div className="col-xs-4">
-                            <img src="./src/img/logo.jpeg" alt=""></img>
+                        <div id="logoDiv" className="col-xs-4">
+                            <img id="logo" src="./src/img/logo.jpeg" alt=""></img>
                         </div>
 
                         <div className="col-xs-4">
                             <ul className = "nav navbar-nav pull-left">
                                 <li>
-                                    <a href="./menu.html" >
+                                    <a id="menuNav" href="./menu.html" >
                                         Menu
                                     </a>
                                 </li>
                                 <li className = "active">
-                                    <a href="./contact.html" >
+                                    <a id="menuNav" href="./contact.html" >
                                         Contact Us
                                     </a>
                                 </li>
