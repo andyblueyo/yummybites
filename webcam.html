@@ -6,15 +6,18 @@
 	<title>Media</title>
 	<link rel="stylesheet" href="src/css/webcam.css">
 	 <link rel="stylesheet" href="./src/css/main.css">
+	 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!--<link rel="icon" href="img/page-icon.png">-->
 </head>
 <body>
-	<img id= "imgCanvas" src="page-icon.png" alt="">
+	<!--<img id= "imgCanvas" src="food-frame.png" alt="">-->
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container" id="header">
-			<h1>Imagine Yourself at Yummy Bites!</h1>
+			<h4>Imagine yourself at Yummy Bites!</h4>
 			<video id="video" autoplay="true"></video>
 			<div class ="buttons-cam">
 				<button id="snap" class="button"><span class="glyphicon glyphicon-camera" aria-hidden="true"></button>
@@ -23,6 +26,8 @@
 		</div>
 	</div>
 	<div class="container">
+		<span> 
+		<h4>Make it insta-perfect!</h4>
 		<div class ="buttons-cam">
 		<select id="filter-select">
 			<option value="" selected>No Filter</option>
@@ -33,23 +38,23 @@
 			<option value="hue-rotate">Hue Rotate</option>
 			<option value="blur">Blur</option>
 		</select>
-	</div>
+		</div>
+		</span>
         <div class="row">
 				<div style="position: relative;">
 					<!--to download an canvas as a png 
 					http://weworkweplay.com/play/saving-html5-canvas-as-image/-->
-
-					<div class="row">
-  						<div class="col-md-6">					
+			
 							  <div class="canvas__container">
   								<canvas id="cnvs1" class="canvas__canvas" width="640" height="480" style="position: absolute; z-index: 0"></canvas>
   								<img src="" id="mirror" class="canvas__mirror" /></div>
 								<canvas id="bg" width="640" height="480" style="position: absolute; z-index: 0" ></canvas></div>
-  						<div class="col-md-6">col-md-6</div>
-					</div>
+
 				</div>
         </div>
     </div>
+
+	
 	<script src="js/webcam.js"></script>
 </body>
 </html> 

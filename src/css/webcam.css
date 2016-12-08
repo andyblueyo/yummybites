@@ -59,13 +59,12 @@ a:active {
 
 video {
 	display: block;
-	border: solid 1px blue;
 	width: 100%;
 
 }
 
 canvas {
-	border: solid 1px blue;
+	border: solid 3px black;
 	cursor: pointer;
 	display: block;
 	width: 100%;

@@ -1,16 +1,11 @@
 "use strict";
-
+var img = new Image();
+img.src = "../food-frame.png";
 var video = document.querySelector("video");
 var canvas = document.getElementById("bg");
 var ctx = canvas.getContext("2d");
-// var canvas2 = document.getElementById("fg");
-// var ctx2 = canvas2.getContext("2d");
 var filterSel = document.querySelector("#filter-select");
-var image = document.getElementById("imgCanvas");
-
 var downloadButton = document.getElementById("btn-download");
-downloadButton.disabled = true;
-
 
 
 
@@ -34,7 +29,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
                 // create the picture
                 ctx.drawImage(video, 0, 0, video.clientWidth, video.clientHeight);
-                ctx.drawImage(image, 50, 50);
+                ctx.drawImage(img, 50, 50);
             });
             
             filterSel.addEventListener("change", function() {
