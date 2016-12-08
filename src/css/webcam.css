@@ -10,9 +10,13 @@ img {
 	width: 30px;
 }
 
+#header {
+    color: #FFF;
+}
+
 .jumbotron {
     margin-bottom: 0px;
-    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/chickenTeriyaki.jpg);*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/chickenTeriyaki.jpg);
     min-height: 300px;
     background-position: 0% 25%;
     background-size: cover;
@@ -58,6 +62,7 @@ a:active {
 }
 
 video {
+	border: solid 3px white;
 	display: block;
 	width: 100%;
 
