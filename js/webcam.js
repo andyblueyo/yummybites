@@ -25,8 +25,11 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             document.getElementById("snap").addEventListener("click", function() {
                 canvas.width = video.clientWidth;
                 canvas.height = video.clientHeight;
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx2.clearRect(0, 0, canvas.width, canvas.height);
+
                 ctx.drawImage(video, 0, 0, video.clientWidth, video.clientHeight);
-                ctx2.drawImage(image, 0, 0, video.clientWidth, video.clientHeight);
+                ctx2.drawImage(image, 100, 100);
 
             });
             
