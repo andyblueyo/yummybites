@@ -7,11 +7,21 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link rel="stylesheet" href="./src/css/main.css">
 
     <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script defer src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+
+
+  <script defer src="./src/components/contact.js"></script> 
+
 
 </head>
 <body>
@@ -62,26 +72,59 @@
     </header>
     <main>
         <div class="container">
-            <div class="about">
-                <h1>About us</h1>
-                <p>
-                    Owned and operated by a local South Korean family from Lynnwood, Yummy Bites offers a flavor packed menu ranging from Japanese fusion Teriyaki to traditional and trending Korean entrees. Located in the heart of University District, this warm and cozy restaurant will surely make you feel right at home the moment you walk in and have you leaving with a satisfied belly every time. 
-                </p>
-            </div>  
-            <div id="map">
+            <h2>Contact Us!</h2>
+            <div class="messageBox">
+                <form class="new-message-form">
+                    <div class="row">
+                        <div class="input-group col-md-3 nameInput">
+                            <input type = "text"
+                                class="form-control firstName"
+                                placeholder="First Name"
+                                required
+                                autofocus>
+                        </div>
+                        <div class="input-group col-md-3 nameInput">
+                            <input type = "text"
+                                class="form-control lastName"
+                                placeholder="Last Name"
+                                required
+                                >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-group col-md-6 emailInput">
+                            <input type = "text"
+                                class="form-control email"
+                                placeholder="Email Address"
+                                required
+                                >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-group col-md-6 textInput">
+                            <textarea type = "text"
+                                class="form-control new-messege"
+                                placeholder="type message here"
+                                required
+                                ></textarea>
+                        </div>
+                    </div>
+                    
+                     <button type="submit" 
+                                class="fa fa-paper-plane fa-2x" 
+                                aria-label="create new task">
+                    </button>                            
+                </form>     
             </div>
-       
-        </div>
-
+        </div>    
 
     </main>
-
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <h3>Location</h3>
-                    <p>-university District-</p>
+                    <p>&lt;university District&gt;</p>
                     <p><a href="https://goo.gl/maps/9jjDFCDKYy72" target="_blank">4131 University Way NE, Seattle, WA 98105</a></p>
                 </div>
                 <div class="col-md-4">
@@ -103,10 +146,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="./src/components/map.js"></script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzz4JUa0Rwu26g5xTYINDgxavL5g4Nh6M&callback=initMap">
-    </script>
 </body>
 </html>

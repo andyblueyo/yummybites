@@ -13,37 +13,47 @@ export default class extends React.Component {
 
         return (
             <div>
-                <header>
+    <header>
+        <div className="container">
+            <div className="navbar nav-tabs" >
                     <div className="container">
-                        <div className="navbar nav-tabs navbar-fixed-top" >
-                            <div className="container">
-                                <div className="col-xs-4">
-                                    <ul className = "nav navbar-nav pull-right">
-                                        <li>
-                                            <a href="./index.html" >Home</a>
-                                        </li>
-                                        <li className = "active">
-                                            <a href="./about.html" >About</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className="col-xs-4">
-                                    <img src="./src/img/logo.jpeg" alt=""></img>
-                                </div>
-                                <div className="col-xs-4">
-                                    <ul className = "nav navbar-nav pull-left">
-                                        <li>
-                                            <a href="./index.html" >Menu</a>
-                                        </li>
-                                        <li className = "active">
-                                            <a href="./about.html" >Webcam</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div className="col-xs-4">
+                            <ul className = "nav navbar-nav pull-right">
+                                <li>
+                                    <a href="./index.html" >
+                                        Home
+                                    </a>
+                                </li>
+                                <li className = "active">
+                                    <a href="./about.html" >
+                                        About
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="col-xs-4">
+                            <img src="./src/img/logo.jpeg" alt=""></img>
+                        </div>
+
+                        <div className="col-xs-4">
+                            <ul className = "nav navbar-nav pull-left">
+                                <li>
+                                    <a href="./menu.html" >
+                                        Menu
+                                    </a>
+                                </li>
+                                <li className = "active">
+                                    <a href="./contact.html" >
+                                        Contact Us
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </header>
+            </div>
+        </div>
+    </header>
                 <main>
                     {this.props.children}
                 </main>

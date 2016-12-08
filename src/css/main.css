@@ -11,16 +11,12 @@ body {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
+    text-align: center;
 }
 
 main{
-    padding-top: 1em;
+    padding-bottom: 2em;
 }
-
-.container {
-    margin: 0 auto;
-}
-
 
 .card-title {
     flex: 1 1 auto;
@@ -43,6 +39,7 @@ main{
 
 main{
     margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 li{
@@ -51,6 +48,10 @@ li{
 
 li a{
     font-size: 30px;
+}
+
+a {
+    color: black;
 }
 
 
@@ -157,4 +158,36 @@ footer .contacts a:hover{
 
 #myCarousel span{
     color: black;
+}
+
+/*about*/
+.about p{
+    margin-right: 6em;
+    margin-left: 6em;
+}
+
+.about{
+    margin-bottom: 2em;
+    font-family: 'Droid Sans';
+}
+
+/**/
+.messageBox .input-group{
+    display:inline-block;
+}
+
+form{
+    text-align: center;
+}
+
+.nameInput, .emailInput{
+    height: 50px;
+}
+
+textarea{
+    min-height:300px;
+}
+
+.form-control{
+    height:100%;
 }
