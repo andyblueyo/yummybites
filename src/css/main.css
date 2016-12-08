@@ -14,6 +14,10 @@ body {
     text-align: center;
 }
 
+h4{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 main{
     padding-top: 1em;
 }
@@ -67,15 +71,16 @@ main{
 
 .navbar{
     background-color:white; 
-    border-bottom:1px solid gray;
     font-family: 'Patua One';
     padding-top: 2em;
     padding-bottom: 2em;
+    margin-bottom: 0px;
 }
 
+
 main{
-    margin-top: 1em;
-    margin-bottom: 1em;
+    /*margin-top: 1em;
+    margin-bottom: 1em;*/
 }
 
 li{
@@ -84,6 +89,8 @@ li{
 
 li a{
     font-size: 30px;
+    color: #F08828;
+
 }
 
 
@@ -93,7 +100,6 @@ li a{
 a {
     color: black;
 }
-
 
 
 
@@ -154,14 +160,22 @@ margin: 0 auto 0 auto;
     margin-left:3em;
 }
 
+.navbar, header, footer {
+    background-image: url("./school.png");
+    color: #F08828;
+
+}
+
+header{
+    border-bottom:1px solid gray;
+}
+
 /*footer*/
 footer{
     font-family: 'Patua One';
     font-size: 12px;
-    margin-top:2em;
     padding-top: 2em;
     padding-bottom: 2em;
-    border-color: white;
     border-top:1px solid gray;
 }
 
@@ -171,7 +185,7 @@ footer .col-md-4{
 
 
 footer .contacts a{
-    color: black;
+    color: F08828;
     margin-right: 7px;
     margin-left: 7px;
 }
@@ -184,6 +198,17 @@ footer .contacts a:hover{
     color: darkgrey;
 }
 
+.fa-facebook-official{
+    color: mediumblue;
+}
+
+.fa-yelp{
+    color: #C41200;
+}
+
+.fa-home{
+    color: saddlebrown
+}
 
 
 /*home*/
@@ -201,10 +226,7 @@ footer .contacts a:hover{
 }
 
 /*about*/
-.about p{
-    margin-right: 6em;
-    margin-left: 6em;
-}
+
 
 .about{
     margin-bottom: 2em;
