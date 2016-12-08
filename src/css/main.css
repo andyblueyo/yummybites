@@ -2,7 +2,7 @@
 
 body {
     font-family: "Hevletica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     padding: 0;
     margin: 0;
 }
@@ -13,55 +13,48 @@ body {
     padding: 0 15px;
 }
 
-nav {
-    background-color: #F0F0F0;
-}
-
-nav ul {
-    padding-left: 0;
-    margin: 0;
-}
-
-nav li {
-    list-style: none;
-    display: inline-block;    
-}
-
-nav a {
-    display: inline-block;    
-    padding-top: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 0.5rem;
-    font-weight: bold;
-    color: #333;
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
-    border-bottom-color: transparent;
-    text-decoration: none;
-}
-
-nav a:hover {
-    border-bottom-color: #333;
-}
-
-nav a.active {
-    border-bottom-color: #333;
+main{
+    padding-top: 5em;
 }
 
 .container {
     margin: 0 auto;
 }
 
-span {
-    font-weight: bold;
-}
 
 .card-title {
     flex: 1 1 auto;
     width: auto;
     padding: 0px;
 }
+
+/*Navbar*/
+.col-xs-4{
+    text-align: center;
+}
+
+.navbar{
+    background-color:white; 
+    border-bottom:1px solid gray;
+    font-family: 'Patua One';
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+main{
+    margin-top: 10em;
+}
+
+li{
+    margin-top: 25px;
+}
+
+li a{
+    font-size: 30px;
+}
+
+
+
 
 
 
@@ -111,9 +104,6 @@ margin: 0 auto 0 auto;
 
 .about{
     text-align: center;
-}
-
-.about{
     margin-right: 4em;
     margin-left: 4em;
 }
@@ -153,3 +143,10 @@ footer .contacts a:hover{
 }
 
 
+/*home*/
+.carousel-inner .item img, .carousel-inner .item a img{
+    width: 70%;
+    margin: auto;
+    max-width: 500px;
+    max-height: 500px;
+}

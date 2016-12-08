@@ -14,32 +14,36 @@ export default class extends React.Component {
         return (
             <div>
                 <header>
-                    <nav className = "navbar navbar-inverse">
-                        <ul className = "nav navbar-nav navbar-right">
-                            <li>
-                                <a href="./index.html">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./about.html">
-                                    About
-                                </a>
-                            </li>
-                            <li>
-                                <IndexLink to="/menu" activeClassName="active">
-                                    Menu
-                                </IndexLink>
-                            </li>
-                            <li>
-                                <a href="./index.html" >
-                                    Webcam
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <div className="container">
+                        <div className="navbar nav-tabs navbar-fixed-top" >
+                            <div className="container">
+                                <div className="col-xs-4">
+                                    <ul className = "nav navbar-nav pull-right">
+                                        <li>
+                                            <a href="./index.html" >Home</a>
+                                        </li>
+                                        <li className = "active">
+                                            <a href="./about.html" >About</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="col-xs-4">
+                                    <img src="./src/img/logo.jpeg" alt=""></img>
+                                </div>
+                                <div className="col-xs-4">
+                                    <ul className = "nav navbar-nav pull-left">
+                                        <li>
+                                            <a href="./index.html" >Menu</a>
+                                        </li>
+                                        <li className = "active">
+                                            <a href="./about.html" >Webcam</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </header>
-                
                 <main>
                     {this.props.children}
                 </main>
