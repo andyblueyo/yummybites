@@ -10,20 +10,19 @@ export default class extends React.Component {
     }
 
     render() {
-
         return (
             <div>
                 <header>
                     <div className="container">
-                        <div className="navbar nav-tabs navbar-fixed-top" >
+                        <div className="navbar nav-tabs" >
                             <div className="container">
                                 <div className="col-xs-4">
                                     <ul className = "nav navbar-nav pull-right">
                                         <li>
-                                            <a href="./index.html" >Home</a>
+                                            <a id ="menuNav"href="./index.html" >Home</a>
                                         </li>
                                         <li className = "active">
-                                            <a href="./about.html" >About</a>
+                                            <a id ="menuNav"href="./about.html" >About</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -33,10 +32,10 @@ export default class extends React.Component {
                                 <div className="col-xs-4">
                                     <ul className = "nav navbar-nav pull-left">
                                         <li>
-                                            <a href="./index.html" >Menu</a>
+                                            <a id ="menuNav"href="./index.html" >Menu</a>
                                         </li>
                                         <li className = "active">
-                                            <a href="./about.html" >Webcam</a>
+                                            <a id ="menuNav"href="./about.html" >Webcam</a>
                                         </li>
                                     </ul>
                                 </div>

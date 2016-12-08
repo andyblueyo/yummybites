@@ -16,13 +16,40 @@ body {
 main{
     padding-top: 1em;
 }
-
+#yelpCard{
+    height: 220px;
+}
 .container {
     margin: 0 auto;
 }
 
+.stars {
+    color: #ffdf42;
+}
 
-.card-title {
+.name {
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.reviewTitle {
+    text-align: center;
+}
+    
+#titleCard {
+    padding-bottom: 0px;
+}
+
+#textCard {
+    padding-top: 5px;
+}
+
+.mdl-card__title-text {  
+    margin: 0 auto;
+    padding-right: 15px;
+}
+
+.cardTitle {
     flex: 1 1 auto;
     width: auto;
     padding: 0px;
@@ -53,9 +80,9 @@ li a{
     font-size: 30px;
 }
 
-
-
-
+#menuNav {
+    color: black;
+}
 
 
 @media (max-width: 435px ) {
@@ -70,11 +97,11 @@ li a{
     img {
         width: 175px;
     }
-    .card-title {
+    .cardTitle {
         margin-left: 175px;
     }
 
-    .card-text {
+    .cardText {
         margin-left: 175px;
     }
 }
@@ -83,10 +110,10 @@ li a{
    img {
        width: 200px; 
    }
-   .card-title {
+   .cardTitle {
        margin-left: 210px;
    }
-   .card-text {
+   .cardText {
        margin-left: 200px;
    }
 }
