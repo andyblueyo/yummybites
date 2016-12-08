@@ -1,10 +1,7 @@
 import React from "react";
 import {render} from "react-dom";
 import App from "./components/app.jsx";
-import Home from "./components/home.jsx";
 import Menu from "./components/menu.jsx";
-import Gallery from "./components/gallery.jsx";
-import Cart from "./components/cart.jsx";
 
 // Stylesheet: Material Design Lite
 import 'react-mdl/extra/material.css';
@@ -22,8 +19,6 @@ var router = (
         <Route path="/" component = {App}>
             <IndexRoute component = {Menu}></IndexRoute>
             <Route path = "/menu" component = {Menu}></Route>
-            <Route path = "/gallery" component = {Gallery}></Route>
-            <Route path = "/cart" component = {Cart}></Route>
         </Route>
     </Router>
 );
